@@ -822,4 +822,31 @@ button:hover,
 
     transform:translateY(-3px);
 
+@media (max-width: 768px) {
+    .logo{
+        width:90px;
+    }
+
+    h1{
+        front-size:38px;
+        text-align:center;
+    }
+
+    .menu{
+        display:flex;
+        flex-direction:column;
+        gap:15px;    
+
+    }
+
+    .card{
+        width:90%;
+        margin:auto;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
 }
