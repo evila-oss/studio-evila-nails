@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Studio Evila Nails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+   <div class="logo">
+    <img src="logo/logo.png" alt="Studio Evila Nails">
+</div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="design.html">Criar Meu Design</a>
+    </nav>
+</header>
+
+<section class="agendamento">
+
+    <h1>Agende seu horário</h1>
+
+    <form id="formAgendamento">
+
+        <input type="text" id="nome" placeholder="Seu nome" required>
+
+        <input type="tel" id="telefone" placeholder="WhatsApp" required>
+
+        <select id="servico">
+
+            <option>Postiça Realista</option>
+            <option>Banho de Gel</option>
+            <option>Blindagem</option>
+            <option>Manicure Tradicional</option>
+            <option>Pedicure Tradicional</option>
+            <option>Esmaltação em Gel</option>
+
+        </select>
+
+        <input type="date" id="data">
+
+        <input type="time" id="hora">
+
+        <textarea id="observacao" placeholder="Observações"></textarea>
+
+        <button type="button" onclick="enviarWhatsApp()">
+            Enviar Agendamento
+        </button>
+
+    </form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

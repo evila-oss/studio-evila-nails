@@ -1,0 +1,825 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff6fb;
+}
+
+header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    box-shadow:0px 3px 10px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:#ff2d8d;
+
+}
+
+nav a{
+
+    margin-left:30px;
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-size:18px;
+
+}
+
+nav a:hover{
+
+    color:#ff2d8d;
+
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("imagens/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.banner h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 24px;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.banner h1{
+
+    font-size:60px;
+
+    color:#ff2d8d;
+
+}
+
+.banner p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    color:#666;
+
+}
+
+button{
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff2d8d;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+.servicos{
+    padding:80px 50px;
+    text-align:center;
+    background:white;
+}
+
+.servicos h2{
+    font-size:42px;
+    color:#ff2d8d;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:20px;
+    color:#ff2d8d;
+}
+
+.card p{
+    margin:15px;
+    color:#666;
+}
+
+.card span{
+    display:block;
+    font-size:22px;
+    font-weight:bold;
+    color:#ff2d8d;
+    margin-bottom:25px;
+}
+
+.galeria{
+    padding:80px 50px;
+    background:#fff6fb;
+}
+
+.galeria h2{
+    text-align:center;
+    font-size:42px;
+    color:#ff2d8d;
+    margin-bottom:40px;
+}
+
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.galeria-grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.galeria-grid img:hover{
+    transform:scale(1.05);
+}
+
+.precos{
+    padding:80px 50px;
+    background:white;
+}
+
+.precos h2{
+    text-align:center;
+    font-size:42px;
+    color:#ff2d8d;
+    margin-bottom:40px;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+    background:#ff2d8d;
+    color:white;
+    padding:18px;
+    font-size:22px;
+}
+
+td{
+    padding:18px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+    font-size:20px;
+}
+
+tr:hover{
+    background:#fff1f7;
+}
+
+footer{
+    background:#222;
+    color:white;
+    padding:50px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-container div{
+    flex:1;
+    min-width:250px;
+}
+
+.footer-container h3{
+    color:#ff2d8d;
+    margin-bottom:15px;
+}
+
+.footer-container p{
+    margin:8px 0;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    border-top:1px solid #444;
+    padding-top:20px;
+    color:#aaa;
+}
+
+.design{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+.design h1{
+
+font-size:50px;
+
+color:#ff2d8d;
+
+margin-bottom:15px;
+
+}
+
+.design p{
+
+font-size:22px;
+
+margin-bottom:40px;
+
+color:#666;
+
+}
+
+.opcoes{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.grupo{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.grupo h2{
+
+margin-bottom:15px;
+
+color:#ff2d8d;
+
+}
+
+select{
+
+width:100%;
+
+padding:15px;
+
+font-size:18px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+}
+
+.botoes-banner{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.botoes-banner button{
+    background:#ff2d8d;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.botoes-banner button:hover{
+    background:#e02178;
+    transform:scale(1.05);
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+    box-sizing:border-box;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff2d8d;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff2d8d;
+}
+
+.banner{
+    padding-top:120px;
+}
+
+.diferenciais{
+    padding:80px 40px;
+    background:#fff5fa;
+    text-align:center;
+}
+
+.diferenciais h2{
+    font-size:40px;
+    color:#ff2d8d;
+    margin-bottom:50px;
+}
+
+.cards-diferenciais{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card-diferencial{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card-diferencial:hover{
+    transform:translateY(-8px);
+}
+
+.card-diferencial h3{
+    color:#ff2d8d;
+    margin-bottom:15px;
+}
+
+.card-diferencial p{
+    color:#666;
+    line-height:1.6;
+}
+
+.avaliacoes{
+    padding:80px 40px;
+    background:white;
+    text-align:center;
+}
+
+.avaliacoes h2{
+    font-size:40px;
+    color:#ff2d8d;
+    margin-bottom:50px;
+}
+
+.cards-avaliacoes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.avaliacao{
+    background:#fff5fa;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.estrelas{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.avaliacao p{
+    font-style:italic;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.avaliacao h4{
+    color:#ff2d8d;
+}
+
+.agendamento{
+    max-width:700px;
+    margin:120px auto 60px;
+    padding:30px;
+}
+
+.agendamento h1{
+    text-align:center;
+    color:#ff2d8d;
+    margin-bottom:30px;
+}
+
+.agendamento form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.agendamento input,
+.agendamento select,
+.agendamento textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.agendamento textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.agendamento button{
+    background:#ff2d8d;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.agendamento button:hover{
+    background:#e60073;
+}
+
+.logo img{
+    width:180px;
+    height:auto;
+}
+
+.botoes-banner button{
+    background:#ff2d8d;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botoes-banner button:hover{
+    background:#d81b75;
+    transform:translateY(-3px);
+}
+
+.faq{
+    padding:80px 40px;
+    background:#fff5fa;
+}
+
+.faq h2{
+    text-align:center;
+    color:#ff2d8d;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.pergunta{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.pergunta h3{
+    color:#ff2d8d;
+    margin-bottom:10px;
+}
+
+.pergunta p{
+    color:#555;
+    line-height:1.6;
+}
+
+.footer-contato a{
+    color:#ff2d8d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.footer-contato a:hover{
+    text-decoration:underline;
+}
+
+/* ===== MELHORIAS VISUAIS ===== */
+
+body{
+    font-family: 'Arial', sans-serif;
+    background:#fff8fc;
+}
+
+
+/* Botões */
+button,
+.btn{
+    background:#ff2d8d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+button:hover,
+.btn:hover{
+    background:#d91f75;
+    transform:scale(1.05);
+}
+
+
+/* Links */
+a{
+    transition:0.3s;
+}
+
+
+/* Efeito nos cards */
+.card,
+.servico,
+.produto{
+    transition:0.3s;
+}
+
+
+.card:hover,
+.servico:hover,
+.produto:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+/* Imagens */
+img{
+    max-width:100%;
+    border-radius:15px;
+}
+
+
+/* Rolagem suave */
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width:768px){
+
+    body{
+        font-size:16px;
+    }
+
+
+    header{
+        text-align:center;
+    }
+
+
+    h1{
+        font-size:28px;
+    }
+
+
+    h2{
+        font-size:24px;
+    }
+
+
+    .menu{
+        flex-direction:column;
+        gap:15px;
+    }
+
+
+    .container{
+        width:90%;
+        margin:auto;
+    }
+
+
+    .servicos,
+    .cards,
+    .produtos{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    .card,
+    .servico,
+    .produto{
+        width:90%;
+        margin-bottom:20px;
+    }
+
+
+    button,
+    .btn{
+        width:90%;
+        padding:15px;
+    }
+
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+
+    footer{
+        text-align:center;
+    }
+
+}
+
+/* ===== ANIMAÇÕES PROFISSIONAIS ===== */
+
+
+/* Aparecer suavemente */
+.fade-in{
+    animation: aparecer 1s ease;
+}
+
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* Animação dos cards */
+
+.card,
+.servico,
+.produto{
+
+    animation: subir 0.8s ease;
+
+}
+
+
+@keyframes subir{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* Logo */
+
+.logo{
+
+    transition:0.4s;
+
+}
+
+
+.logo:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/* Botões com movimento */
+
+button:hover,
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}

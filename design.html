@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Criar Meu Design</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="logo/logo.png" alt="Studio Evila Nails">
+</div>
+
+<nav>
+
+<a href="index.html">Início</a>
+
+<a href="design.html">Criar Meu Design</a>
+
+</nav>
+
+</header>
+
+<section class="design">
+
+<h1>Monte sua unha perfeita</h1>
+
+<p>Escolha cada detalhe abaixo.</p>
+
+<div class="opcoes">
+
+<div class="grupo">
+
+<h2>Formato</h2>
+
+<select id="formato">
+
+<option>Quadrada</option>
+
+<option>Oval</option>
+
+<option>Almond</option>
+
+<option>Stiletto</option>
+
+<option>Bailarina</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<h2>Comprimento</h2>
+
+<select id="comprimento">
+
+<option>Curta</option>
+
+<option>Média</option>
+
+<option>Longa</option>
+
+<option>Extra Longa</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<h2>Cor</h2>
+
+<select id="cor">
+
+<option>Rosa</option>
+
+<option>Nude</option>
+
+<option>Branca</option>
+
+<option>Preta</option>
+
+<option>Vermelha</option>
+
+<option>Azul</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<h2>Decoração</h2>
+
+<select id="decoracao">
+
+<option>Sem decoração</option>
+
+<option>Francesinha</option>
+
+<option>Glitter</option>
+
+<option>Pedras</option>
+
+<option>Flores</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button onclick="gerarDesign()">Gerar Meu Design</button>
+
+<div class="resultado">
+
+    <img id="preview" src="imagens/postica.jpg" alt="Prévia da unha">
+
+    <h2>Seu Design</h2>
+
+    <p id="resultadoTexto">
+        Escolha as opções e clique em "Gerar Meu Design".
+    </p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
