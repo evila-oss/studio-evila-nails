@@ -819,18 +819,18 @@ html{
 
 button:hover,
 .btn:hover{
+    transform: translateY(-3px);
+}
 
-    transform:translateY(-3px);
-
-@media (max-width: 768px) {
-    .logo{
-        width:90px;
-    }
+@media (max-width:768px){
+    .logo img{
+    width:90px;
+}
 
     h1{
-        front-size:38px;
-        text-align:center;
-    }
+    font-size:38px;
+    text-align:center;
+}
 
     .menu{
         display:flex;
