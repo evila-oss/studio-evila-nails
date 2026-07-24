@@ -822,80 +822,90 @@ button:hover,
     transform: translateY(-3px);
 }
 
-@media (max-width:768px){
-    .logo img{
-    width:90px;
-}
-
-    h1{
-    font-size:38px;
-    text-align:center;
-}
-
-    .menu{
-        display:flex;
-        flex-direction:column;
-        gap:15px;    
-
-    }
-
-    .card{
-        width:90%;
-        margin:auto;
-    }
-
-    img{
-        max-width:100%;
-        height:auto;
-    }
-
-    /* ===== AJUSTES PARA CELULAR ===== */
+/* ===== RESPONSIVO PARA CELULAR ===== */
 
 @media (max-width:768px){
 
     header{
-        flex-direction: column;
-        padding: 10px 20px;
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        text-align:center;
     }
 
     .logo img{
-        width: 90px;
+        width:100px;
+        margin-bottom:10px;
     }
 
     nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+        margin-top:10px;
     }
 
     nav a{
-        font-size: 16px;
-        margin: 5px;
+        margin:0;
+        font-size:16px;
+    }
+
+    .banner{
+        min-height:auto;
+        padding:160px 20px 80px;
     }
 
     .banner h1{
-        font-size: 32px;
+        font-size:32px;
     }
 
     .banner p{
-        font-size: 18px;
+        font-size:18px;
     }
 
+    .btn,
     button{
-        width: 100%;
-        max-width: 300px;
+        width:100%;
+        max-width:300px;
+        margin:10px auto;
+        display:block;
+        text-align:center;
+    }
+
+    .cards,
+    .cards-avaliacoes,
+    .cards-diferenciais{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card,
+    .avaliacao,
+    .card-diferencial{
+        width:95%;
+    }
+
+    .galeria-grid{
+        grid-template-columns:1fr;
     }
 
     table{
-        width: 100%;
+        width:100%;
+        font-size:15px;
     }
 
     th,
     td{
-        font-size: 16px;
-        padding: 10px;
+        padding:10px;
+        font-size:15px;
     }
 
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
 }
